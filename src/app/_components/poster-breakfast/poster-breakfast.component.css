@@ -1,0 +1,101 @@
+input[type=submit]{
+  font-size:30px;
+  font-weight: bold;
+  font-family:"Jokerman";
+  border-radius: 2em;
+  transition: all 0.3s ease 0s;
+  color:greenyellow;
+  background-image: radial-gradient( rgb(52, 243, 52),red);
+}
+.formSeach{
+  width: 400px;
+  color:chartreuse ;
+  border-radius: 1em;
+}
+.input-group-text{
+  color: chartreuse;
+}
+
+.btn_home{
+
+  margin-right: 10px;
+  border-radius: 20px;
+  background-image: radial-gradient(red, rgb(110, 9, 9));
+  color: beige;
+}
+
+
+.backgroundslide{
+
+  height: 650px;
+  width: 100%;
+
+}
+.carousel-caption{
+  color: green;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  margin-bottom: 200px;
+}
+
+.text{
+  background-color:ghostwhite;
+}
+.kookyImage{
+  height: 300px;
+  width: 300px;
+}
+.classProduct{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.product {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+  border: 1.5px solid green;
+  border-radius: 0.5em;
+}
+.product img {
+    display: block;
+    height: 200px;
+}
+.img-fluid {
+      max-width: 100%;
+      height: auto;
+}
+h4 .nameproduct{
+  color: #08e237;
+
+}
+.advertisement{
+  margin-top: 2px;
+  background-color:rgb(120, 185, 23);
+  border-radius: 1em;
+  height: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.textadvertisement{
+  text-align: center;
+  margin-top: 4px;
+  font-size: 20px;
+  font-family: "Algerian";
+
+}
+
+.backgroundadvertisementImage{
+  height: 250px;
+  width: 100%;
+  border-radius: 1em;
+  border: 0.5px solid green;
+}
+.textadvertisementImage{
+  color: rgb(120, 185, 23);
+  text-align: center;
+  font-family: "Arial", cursive;
+  margin-bottom: 200px;
+  font-weight: bold;
+  font-size: 25px;
+}

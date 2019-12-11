@@ -1,0 +1,40 @@
+.header{
+  background-color:rgb(120, 185, 23);
+  height: 50px;
+}
+ p{
+  font-size: 30px;
+  font-family:"Jokerman";
+  color:rgb(243, 10, 10);
+  margin-top: 5px;
+  margin-left: 25px;
+ }
+.formSeach{
+  margin-top: 5px;
+  width: 600px;
+
+}
+.form-control{
+  color:gray ;
+}
+.btn_header{
+  border-radius: 15px;
+  border-color: rgb(236, 75, 75);
+  background-image: radial-gradient(red, rgb(164, 212, 30));
+  font-size: 18px;
+  margin-left: 10px;
+  color: chartreuse;
+  margin-top: 5px;
+}
+.icon-text{
+  color: chartreuse;
+}
+.form
+{
+    width: 400px;
+}
+.sticky
+{
+  position: fixed;
+}
+

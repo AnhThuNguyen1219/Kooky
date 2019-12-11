@@ -1,0 +1,37 @@
+.form-comment{
+  width: 800px;
+  height: 50px;
+  margin-left: 40px;
+  margin-top: 20px;
+  background-color: antiquewhite;
+  color: greenyellow;
+  border-radius: 1em;
+}
+.btn_home{
+  margin-left: 750px;
+  margin-right: 10px;
+  border-radius: 20px;
+  margin-top: 5px;
+  font-size: 20px;
+  background-image: radial-gradient(red, rgb(110, 9, 9));
+  color: beige;
+}
+.mg-r150{
+  margin-left: 150px;
+}
+.mg-r50{
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.cl-blue{
+  color: aquamarine;
+}
+.resourcesReview{
+  background-color:ghostwhite;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+  height: 200px;
+  margin-left: 130px;
+  border: 0.5px solid green;
+}
