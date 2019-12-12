@@ -28,24 +28,12 @@
   <div class="row">
     <div class="peformReview">
       <h5 class="resourcesTitle mg-l350"> CÁCH LÀM</h5>
-      <h6 class="resourcesTitle mg-l50"></h6>
-      <p class="resources mg-l50 mg-r50">
-          
-      </p>
-      <h6 class="resourcesTitle mg-l50 mg-r50">Bước 2: Phi thơm tỏi</h6>
+    <div *ngFor = "let step of steps">
+      <h6 class="resourcesTitle mg-l50 mg-r50">Bước {{step.No}}</h6>
       <p class="resources mg-l50">
-          Tỏi bóc vỏ rồi băm nhỏ. Cho dầu vào chảo tới khi dầu nóng thì bỏ tỏi vào phi thơm.
-          Đến khi tỏi có màu vàng thơm đẹp mắt thì vớt tỏi để riêng vào bát con.
+          {{step.Content}}
       </p>
-      <h6 class="resourcesTitle mg-l50">Bước 3: Nấu nước lẩu gà</h6>
-      <p class="resources mg-l50 mg-r50">
-          Sả, hành lá, ớt rửa sạch. Sả, hành lấy phần đầu, cắt khúc dài, đập dập cùng ớt.
-          Lấy một nồi to, cho hành, sả, ớt vào xào thơm cùng chút dầu ăn.
-          Đến khi thấy dậy mùi thơm cả sả và cay nồng của ớt thì cho thịt gà đã ướp vào
-           xào cùng để miếng thịt săn lại. Bỏ thêm chút đường để thịt bám màu vàng nước hàng của đường
-           khi đun nóng.<br>
-          Chế khoảng 1,5 lít nước sôi trắng vào nồi, đun sôi khoảng 20 phút dưới ngon lửa nhỏ
-      </p>
+    </div>
     </div>
   </div>
   <app-comment ></app-comment>
