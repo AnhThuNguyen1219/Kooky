@@ -14,7 +14,7 @@ import { RegistrationComponent } from './_components/registration/registration.c
  {path:'header', component:HeaderComponent},
  {path:'footer', component:FooterComponent},
  {path:'', component:HomeComponent},
- {path :'review', component:ReviewComponent},
+ {path :'review/:id', component:ReviewComponent},
  {path:'login', component:LoginComponent},
  {path:'registration', component: RegistrationComponent},
  //{path:'breakfast', component: BreakfastComponent}

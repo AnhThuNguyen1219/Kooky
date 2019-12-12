@@ -12,8 +12,12 @@ import { FoodService } from 'src/app/_service/food.service';
 })
 export class ProductComponent implements OnInit {
 foods:Food[];
+selectedFood:Food;
   constructor(private foodService:FoodService) { }
-
+    onSelect(food:Food):void
+    {
+      this.selectedFood=food;
+    }
   ngOnInit() {
     this.foodService.getFoods().subscribe(foods=>this.foods=foods);
   }

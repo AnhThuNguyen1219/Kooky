@@ -5,14 +5,14 @@
     <br>
     <div class="row">
     
-        <div class="col-md-3" *ngFor = "let food of foods">  
+      <div class="col-md-3" *ngFor = "let food of foods"  (click)="onSelect(food)">  
       <div class="product img" style="background: white;">
        
         <a href="#" class="img-prod">
-          <img class="img-fluid" src="https://pastaxi-manager.onepas.vn/content/uploads/articles/nguyendoan/anh-blog/bun-mam/cach-nau-bun-mam-1.jpg" alt="">
+          <img class="img-fluid" src="{{food.image}}" alt="">
         </a>
         <div class="text py-2 pb4 px-3">
-          <h5 class="text-center"><a routerLink="/review"  class="nameproduct">{{food.foodName}}</a></h5>
+          <h5 class="text-center"><a routerLink="/review/{{food.id}}"  class="nameproduct">{{food.foodName}}</a></h5>
           <div class="d-flex img">
             <div class="pricing">
               <span class="mr-2 time-cook">Thời gian nấu ăn: {{food.cookTime}}</span><br>

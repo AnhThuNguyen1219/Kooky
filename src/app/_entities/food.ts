@@ -5,6 +5,7 @@ export class Food{
     prepareTime:string;
     cookTime:string;
     image:string;
+    material:string;
     step:Step[];
     gerne:Gerne;
     comment:Comment[];

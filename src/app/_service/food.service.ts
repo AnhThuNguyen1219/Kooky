@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Food } from '../_entities/food';
 const URL:string="https://localhost:5001/api/food/";
+const URLid:string ="https://localhost:5001/api/food/${id}";
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type':  'application/json'
@@ -17,5 +18,9 @@ export class FoodService {
   getFoods():Observable<Food[]>
   {
     return this.httpClient.get<Food[]>(URL);
+  }
+  getFoodById(id):Observable<Food>
+  {
+    return this.httpClient.get<Food>(URL+id);
   }
 }
