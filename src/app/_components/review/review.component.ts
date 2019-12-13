@@ -17,21 +17,22 @@ export class ReviewComponent implements OnInit {
     private location:Location,
     private stepService:StepService
     ) { }
-  steps:Step[];
+  steps: Step[] =[];
   ngOnInit() {
     this.getFoodById();
-    
-  }
+    this.getStepByFoodId();  }
   getFoodById()
   {
     const id= +this.route.snapshot.paramMap.get('id');
-    this.foodService.getFoodById(id).subscribe(food=>this.food=food);
-    this.stepService.getStepByFoodId(id).subscribe(steps=>this.steps=steps);
+    this.stepService.getStepByFoodId(id).subscribe(steps=>{
+      this.steps=steps;
+      console.log(this.steps)
+    });
   }
   getStepByFoodId()
   {
     const id= +this.route.snapshot.paramMap.get('id');
-    
+    this.foodService.getFoodById(id).subscribe(food=>this.food=food);
 
   }
 }

@@ -12,10 +12,10 @@ export class Food{
 }
 export class Step
 {
-    Id:number;
-    No:number;
-    Content:string;
-    //foodId:number;
+    id:number;
+    no:number;
+    content:string;
+    foodId:number;
 }
 export interface Gerne
 {
