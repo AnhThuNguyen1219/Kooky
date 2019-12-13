@@ -19,6 +19,7 @@ import { RegistrationModule } from './_components/registration/registration.modu
 import { BreakfastModule } from './_components/breakfast/breakfast.module';
 import { UserComponent } from './_components/user/user.component';
 import { HeaderUserComponent } from './_components/header-user/header-user.component';
+import { GerneComponent } from './_components/gerne/gerne.component';
 
 
 
@@ -33,6 +34,7 @@ import { HeaderUserComponent } from './_components/header-user/header-user.compo
     RegistrationComponent,
     UserComponent,
     HeaderUserComponent,
+    GerneComponent,
 
   ],
   imports: [

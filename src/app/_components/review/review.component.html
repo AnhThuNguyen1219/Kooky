@@ -9,11 +9,6 @@
     <p class="Review mg-l50 mg-r50 mg-l50 cl-blue mg-t20">
 
 
-        Lẩu gà lá giang là một món ăn được rất nhiều người dân Việt Nam yêu thích
-        bởi vị chua thanh tự nhiên từ lá giang sẽ làm thay đổi khẩu vị,
-        có tác dụng giải cảm hoặc giải nhiệt rất hiệu quả. Vị thơm ngon của gà,
-        vị chua thanh ngọt của lá giang cùng với xả ớt cay cay chắc chắn sẽ làm
-        ngất ngây người thưởng thức.
 
     </p>
   </div>
@@ -25,16 +20,16 @@
         </p>
       </div>
   </div>
-  <div class="row">
-    <div class="peformReview">
-      <h5 class="resourcesTitle mg-l350"> CÁCH LÀM</h5>
-    <div *ngFor = "let step of steps">
-      <h6 class="resourcesTitle mg-l50 mg-r50">Bước {{step.No}}</h6>
-      <p class="resources mg-l50">
-          {{step.Content}}
-      </p>
-    </div>
-    </div>
-  </div>
+  <table>
+    <thead>
+      <th scope="col">Cách làm</th>
+    </thead>
+    <tbody *ngFor="let step of steps">
+      <tr>
+        <td> Bước {{step.No}}</td>
+        <td>{{step.Content}}</td>
+      </tr>
+    </tbody>
+  </table>
   <app-comment ></app-comment>
 </div>

@@ -10,12 +10,12 @@ export class Food{
     gerne:Gerne;
     comment:Comment[];
 }
-export interface Step
+export class Step
 {
     Id:number;
     No:number;
     Content:string;
-    foodId:number;
+    //foodId:number;
 }
 export interface Gerne
 {

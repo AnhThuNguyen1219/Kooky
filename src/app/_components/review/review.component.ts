@@ -20,15 +20,18 @@ export class ReviewComponent implements OnInit {
   steps:Step[];
   ngOnInit() {
     this.getFoodById();
+    
   }
   getFoodById()
   {
     const id= +this.route.snapshot.paramMap.get('id');
     this.foodService.getFoodById(id).subscribe(food=>this.food=food);
+    this.stepService.getStepByFoodId(id).subscribe(steps=>this.steps=steps);
   }
   getStepByFoodId()
   {
     const id= +this.route.snapshot.paramMap.get('id');
-    this.stepService.getStepByFoodId(id).subscribe(steps=>this.steps=steps);
+    
+
   }
 }
